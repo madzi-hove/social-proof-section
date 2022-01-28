@@ -11,6 +11,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -19,31 +20,30 @@ body {
 }
 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column;
     height: 90vh;
-    width: 90%;
-    min-width: 360px;
+    width: 375px;
+    max-width: 90%;
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
     border: 1px solid black;
 }
 
 .container__item {
-    flex: 1 1 35%;
     height: 45vh;
-    min-width: 360px;
     border: 1px solid red;
 }
 
 .introduction {
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-content: flex-end;
     align-items: baseline;
     padding: 5em;
 }
 
-.main-heading {
+/* .main-heading {
     font-size: 3.2em;
     font-weight: 700;
     color: var(--very-dark-magneta);
@@ -54,9 +54,9 @@ body {
     top: 0.4em;
     left: 0.6em;
     border: 1px solid blue;
-}
+} */
 
-.introduction-text {
+/* .introduction-text {
     line-height: 1.5;
     letter-spacing: -1px;
     width: 70%;
@@ -64,23 +64,24 @@ body {
     top: 2.1em;
     left: 2em;
     border: 1px solid blue;
-}
+} */
 
 .feedback {
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-content: flex-end;
     align-items: center;
     
 }
 
-.publication {
+/* .publication {
     display: flex;
     flex-direction: column;
     width: 100%;
     border: 1px solid blue;
-}
+} */
 
 /* li:first-child {
     align-self: baseline;
@@ -113,55 +114,8 @@ body {
     flex: 1 1 33%;
     min-width: 200px;
     border: 1px solid blue;
-}
+} 
 
-
-/* .container__item {
-    display: flex;
-    flex-flow: row wrap;
-    border: 1px solid red;
-}
-
-.introduction {
-    display: flex;
-    flex-flow: column;
-    flex: 1 0;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-    
-}
-.introduction__item {
-    width: 75%;
-}
-
-.main-heading {
-    font-size: 3em;
-    font-weight: bolder;
-}
-
-.publications {
-    display: flex;
-    align-items: flex-start;
-    flex: 1 0;
-    border: 1px solid red;
-}
-
-.reviews {
-    row-gap: 10px;
-    align-items: center;
-}
-
-.customer {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    flex: 1;
-    width: 99%;
-    background-color: var(--very-dark-magneta);
-    border-radius: 10px;
-    border: 1px solid red;
-} */
 .attribution {
     position: absolute;
     bottom: 0;
