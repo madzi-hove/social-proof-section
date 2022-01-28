@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div.flex-container, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;;
+
+        }
+        .container {
+            display: flex;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            height: 90vh;
+            width: 90%;
+            min-width: 360px;
+            border: 1px solid black;
+        }
+
+        .container__item {
+            flex: 1 1 35%;
+            border: 1px solid red;
+        }
+
+        .box-1 {
+            min-width: 360px;
+        }
+
+        .box-2 {
+            min-width: 360px;
+        }
+
+        .box-3 {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .box-3-items {
+            flex: 1 1 33%;
+            min-width: 200px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="container__item introduction">
+            
+        </section>
+        <section class="container__item pulications">
+            
+        </section>
+        <section class="container__item reviews">
+            <div class="box-3-items">
+
+            </div>
+            <div class="box-3-items">
+
+            </div>
+            <div class="box-3-items">
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
